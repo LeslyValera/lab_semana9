@@ -1,0 +1,66 @@
+
+.essence-brand { /*ALINEAR EL CONTENER DEL TEXTO*/
+    text-align: center;
+    color: rgba(225, 74, 99, 0.848);
+  }
+
+  .container-center {
+    margin: 0 auto; /* Esto centra horizontalmente el contenedor */
+  max-width: 400px;
+  }
+
+  /* estilos para el formulario */
+  .my-custom-form {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+    max-width: 600px; 
+  }
+  
+  .form-label {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+    
+  .form-text {
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+   
+  
+  
+  .btn-primary {
+    background-color: purple;
+    border-color: purple;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+
+  /*Estilos para el texto de inicio*/
+  .color-text{
+    color: palevioletred;
+
+  }
+
+  .color-t{
+    color: purple;
+  }
+  /*Estilos para el pie de pagina*/
+
+
+  .color-letras{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+  }
+
+  
