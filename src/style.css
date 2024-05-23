@@ -36,8 +36,8 @@
   
   
   .btn-primary {
-    background-color: purple;
-    border-color: purple;
+    background-color: rgb(48 117 149);
+    border-color: rgb(48 117 149);
     padding: 10px 20px;
     color: #fff;
     font-weight: bold;
@@ -53,7 +53,7 @@
   }
 
   .color-t{
-    color: purple;
+    color: (255, 152, 125);
   }
   /*Estilos para el pie de pagina*/
 
@@ -63,4 +63,38 @@
     font-size: small;
   }
 
+  body{
+    background-color: rgb(250 243 245);
+  }
+
+  /*barra de navegacion*/
+  .barra-navegacion{
+    background-color: rgba(238 214 227);
+    width: 1500px;
+    height: 70px;
+    color: #95304C;
+  }
+
+  .barra-busqueda{
+      width: 300px; 
+      height: 40px; 
+  }
+
+  .search-button{
+    background-color: #95304C;  
+    border-color: #95304C;
+    color: #ffffff;
+  }
+  .custom-search-button:hover { /* Color de fondo al pasar el cursor por el boton*/
+    background-color: #89CCB9; 
+    color: #ffffff; 
+}
+
+  .text-navbar-1{
+    color: #95304C;
+  }
   
+  .dropdown-toggle::after {
+    color: #95304C; /* Cambia el color del triángulo a un tono de naranja */
+    border-top-color: #95304C; /* Cambia el color del borde superior del triángulo */
+  }
