@@ -25,7 +25,7 @@ function Aside() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Acepto uso de mis datos personales" />
       </Form.Group>
-      <Button variant="primary" type="Submit">
+      <Button className='button-form' variant="info" type="Submit">
       {/*<i data-feather="send"></i>*/} Registrarme
       </Button>
     </Form>

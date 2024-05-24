@@ -6,6 +6,8 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Image from 'react-bootstrap/Image';
+
 
 const feather = require('feather-icons');
 
@@ -16,8 +18,9 @@ function Header() {
 
   return (
     <Container fluid>
-      <div className="text-center mb-10 py-3 color-text">
-        <h1>BIENVENIDO A NUESTRO SITIO WEB</h1>
+
+      <div className="center-image">
+      <Image src="https://i.imgur.com/5Z9wd0w.jpeg"  fluid />
       </div>
 
       <Navbar expand="lg" className="bg-body-tertiary">
@@ -52,7 +55,8 @@ function Header() {
                 Consejos y tutoriales
               </Nav.Link>
             </Nav>
-            <Form className="d-flex">
+
+            <Form className="d-flex ">
               <Form.Control 
                 type="search"
                 placeholder="¿Que deseas buscar?"
@@ -61,39 +65,43 @@ function Header() {
               />
               <Button variant="outline-info" className='search-button'><i data-feather="search"></i>Buscar</Button>
             </Form>
-            
+
             {/*carrito de compras*/}
+            <nav className=' carrito-compras'>
             <NavDropdown title={<span><i data-feather="shopping-cart"></i></span>} align="end">
               <NavDropdown.Item>
                 <div>
                   <p>CARRITO DE COMPRAS</p>
-                  <p>Tienes 2 productos agregados a tu carrito</p>
-                  <hr />
-                  <div>
-                    <div>
+                    <hr />
+                  </div>
+                    <div className='cart-text-conteiner'>
                       <p>Set escritorio + archivador 2 cajones Delta Blanco</p>
                       <p>S/ 189 <span>- 1 +</span></p>
                     </div>
-                    <div>
+                    <div className='cart-text-conteiner'>
                       <p>Mueble dispensero Dalia MDP 80x182cm Blanco</p>
                       <p>S/ 359 <span>- 2 +</span></p>
                     </div>
-                  </div>
+                  <div>
                   <hr />
                   <p>Subtotal productos: S/ 548</p>
-                  <Button variant="warning">Ir a mi carrito</Button>
+                  </div>
+
+                  <div className='container-button'>
+                  <Button variant="info" type="Submit" className='cart-button'>Ir a mi carrito</Button>
                 </div>
               </NavDropdown.Item>
             </NavDropdown>
+            </nav>
 
             {/*Perfil del usuario*/}
             <Nav className="ml-auto" >
-              <NavDropdown title={<span><i data-feather="user"></i></span>} align="end">
+              <NavDropdown title={<span className='text-navbar-1'><i data-feather="user"></i></span>} align="end">
                 <NavDropdown.Item disabled>MI CUENTA</NavDropdown.Item>
-                <NavDropdown.Item href="#perfil"><i data-feather="user"></i>Perfil</NavDropdown.Item>
+                <NavDropdown.Item href="#perfil">Perfil</NavDropdown.Item>
                 <NavDropdown.Item href="#pedidos">Mis Pedidos</NavDropdown.Item>
                   <NavDropdown.Divider />
-                <NavDropdown.Item href="#cerrar"><i data-feather="log-out"></i>Cerrar Sesión</NavDropdown.Item>
+                <NavDropdown.Item href="#cerrar">Cerrar Sesión</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

@@ -1,4 +1,8 @@
 
+body{
+  background-color: rgb(250 243 245);
+}
+
 .essence-brand { /*ALINEAR EL CONTENER DEL TEXTO*/
     text-align: center;
     color: rgba(225, 74, 99, 0.848);
@@ -46,26 +50,17 @@
 
   }
 
-  /*Estilos para el texto de inicio*/
-  .color-text{
-    color: palevioletred;
-
-  }
-
-  .color-t{
+   .color-t{
     color: (255, 152, 125);
   }
-  /*Estilos para el pie de pagina*/
 
+  /*Estilos para el pie de pagina*/
 
   .color-letras{
     font-family:Arial, Helvetica, sans-serif;
     font-size: small;
   }
 
-  body{
-    background-color: rgb(250 243 245);
-  }
 
   /*barra de navegacion*/
   .barra-navegacion{
@@ -85,6 +80,7 @@
     border-color: #95304C;
     color: #ffffff;
   }
+  
   .custom-search-button:hover { /* Color de fondo al pasar el cursor por el boton*/
     background-color: #89CCB9; 
     color: #ffffff; 
@@ -95,6 +91,40 @@
   }
   
   .dropdown-toggle::after {
-    color: #95304C; /* Cambia el color del triángulo a un tono de naranja */
-    border-top-color: #95304C; /* Cambia el color del borde superior del triángulo */
+    color: #95304C; /* Cambia el color del triángulo */
+    border-top-color: #95304C; /* Cambia el color del borde*/
   }
+
+  .carrito-compras { /*CARRITO DE COMPRAS*/
+    margin-left: 20px; /* Margen a la izquierda */
+    margin-right: 20px; /* Margen a la derecha */
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 20px; /* Margen inferior */
+  }
+  
+  .cart-text-conteiner{
+    background-color: #ebeaea;
+    border-radius: 05px;
+    }
+  
+  .cart-button{
+    background-color: #307595;
+    border-top-color:#307595 ;
+    color: #f0f0f0;
+  }
+
+  .container-button{
+    text-align: center;
+  }
+  .center-image{
+    justify-content: center;
+  }
+
+  {/*FORMULARIO*/}
+  .button-form{
+    background-color: #307595;
+    border-top-color: #307595;
+    color: #f0f0f0;
+  }
+
+
