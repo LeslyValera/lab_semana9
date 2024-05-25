@@ -15,7 +15,7 @@ body{
 
   /* estilos para el formulario */
   .my-custom-form {
-    background-color: #f0f0f0;
+    background-color: #F2F2F2;
     padding: 30px;
     border-radius: 4px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -23,14 +23,24 @@ body{
     max-width: 600px; 
   }
   
-  .form-label {
+  .form-label { /*etiqutas (texto) del formulario*/
     color: #333;
     font-weight: bold;
     margin-bottom: 10px;
     display: block;
   }
   
-    
+  .button-form{
+    background-color: #95304C;
+    border-top-color: #95304C;
+    color: #f0f0f0;
+    border-radius: 10px;
+  }
+
+  .button-form:hover{ /*colocarle color-scroll*/
+    background-color: #307595;
+  }
+
   .form-text {
     color: #777;
     font-size: 12px;
@@ -40,27 +50,18 @@ body{
   
   
   .btn-primary {
-    background-color: rgb(48 117 149);
-    border-color: rgb(48 117 149);
+    background-color: #95304C;
+    border-color: #95304C;
     padding: 10px 20px;
     color: #fff;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
-
   }
 
    .color-t{
     color: (255, 152, 125);
   }
-
-  /*Estilos para el pie de pagina*/
-
-  .color-letras{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: small;
-  }
-
 
   /*barra de navegacion*/
   .barra-navegacion{
@@ -79,6 +80,11 @@ body{
     background-color: #95304C;  
     border-color: #95304C;
     color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .search-button:hover{
+    background-color: #307595;
   }
   
   .custom-search-button:hover { /* Color de fondo al pasar el cursor por el boton*/
@@ -120,11 +126,54 @@ body{
     justify-content: center;
   }
 
-  {/*FORMULARIO*/}
-  .button-form{
-    background-color: #307595;
-    border-top-color: #307595;
-    color: #f0f0f0;
+ 
+  /*PIE DE PAGINA*/
+  .pie-pagina{
+    background-color: #212121;
+    color:#f0f0f0;
+
   }
 
+    .color-letras{
+      font-family:'Trebuchet MS';
+      font-size: small;
+      letter-spacing:1px
+    }
 
+    .enlaces-c2{
+      text-decoration: none; /* Elimina el subrayado */
+      color:#F2F2F2;
+    }
+
+    .enlaces-c2:hover{
+      color:#48c4f9;
+    }
+
+    /*LISTA DE PRODUCTOS-MAIN*/
+
+/* Estilo para la clase de tarjeta */
+    .card-style {
+        margin-right: 15px;
+        margin-bottom: 15px;
+        background-color: #ffffff;
+        border-radius: 10px; /* Bordes redondeados */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Con esto agregamos sombras */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transiciones */
+    }
+/* Aumenta el tamaño del elemento en un 5% al hacer hover */
+/* La siguiente línea aplica un efecto de escala al elemento */
+    .card-style:hover {
+      transform: scale(1.05); /*crea un efecto de zoom*/
+    }
+
+    .button-list{
+      background-color: #95304C;
+      border-color: #95304C;
+      border-radius: 10px;
+      transition: background-color 0.3s ease, border-color 0.3s ease; /*transicion */
+    }
+
+    .button-list:hover{
+      background-color: #307595;
+      border-color: #307595;
+    }

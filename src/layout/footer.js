@@ -5,26 +5,28 @@ import Col from 'react-bootstrap/Col';
 
 function Footer() {
   return (
-    <footer className="bg-dark text-white mt-4">
+    <footer className="pie-pagina mt-2">
       <Container className='color-letras'>
         <Row className="py-3">
           <Col>
-            <h3>Comunidad</h3>
-            <p>¡Únete a nuestra vibrante comunidad de amantes del maquillaje! En nuestra sección de "Comunidad", no solo encontrarás productos de belleza excepcionales, sino también un espacio donde compartir, aprender y conectarte con otros apasionados del maquillaje.</p>
+            <h5>COMUNIDAD</h5>
+            <p>¡Únete a nuestra vibrante comunidad de amantes del maquillaje!. Comparte, aprender y conectarte con otros apasionados del maquillaje.</p>
           </Col>
           <Col>
-            <h3>Enlaces</h3>
-            <ul>
-              <li><a href="#">Teminos y comdiciones</a></li>
-              <li><a href="#">Nuestras políticas de privacidad</a></li>
-              <li><a href="#">Descargar catálogo virtual</a></li>
+            <h5>LEGAL</h5>
+            <ul className='enlaces-c2'>
+              <li><a href="#Teminos/Condiciones" className='enlaces-c2'>Teminos y comdiciones</a></li>
+              <li><a href="#Privacidad" className='enlaces-c2'>Nuestras políticas de privacidad</a></li>
+              <li><a href="#Catalogo" className='enlaces-c2'>Descargar catálogo virtual</a></li>
             </ul>
           </Col>
-          <Col>
-            <h3>Contacto</h3>
-              <p><a href=""><i data-feather="facebook"></i>facebook</a></p>
-              <p><a href=""><i data-feather="instagram"></i>Instagram</a></p>
-              <p><a href="tel:+51 912 345 678"><i data-feather="phone"></i>WhatsApp</a></p>
+          <Col >
+            <h5>NUESTRO CONTACTO</h5>
+             <div className="d-flex justify-content-between">
+              <p><a href="https://www.facebook.com/essencelatam/?brand_redir=139351150086" className='enlaces-c2'><i data-feather="facebook"></i></a></p>
+              <p><a href="https://www.instagram.com/essence_cosmetics/" className='enlaces-c2'><i data-feather="instagram"></i></a></p>
+              <p><a href="#Telefono" className='enlaces-c2'><i data-feather="phone"></i></a></p>
+             </div>
             </Col>
 
         </Row>

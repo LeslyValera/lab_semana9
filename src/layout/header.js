@@ -8,7 +8,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'react-bootstrap/Image';
 
-
 const feather = require('feather-icons');
 
 function Header() {
@@ -20,12 +19,14 @@ function Header() {
     <Container fluid>
 
       <div className="center-image">
-      <Image src="https://i.imgur.com/5Z9wd0w.jpeg"  fluid />
+         <a href="#PaginaInicial">
+           <Image src="https://i.imgur.com/5Z9wd0w.jpeg"  fluid />
+         </a>
       </div>
 
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid className='barra-navegacion'>
-          <Navbar.Brand href="#">ESSENCE</Navbar.Brand>
+          <Navbar.Brand href="#InicioPagina" style={{ color: '#333', fontFamily: 'Trebuchet MS' }}>ESSENCE</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -33,27 +34,48 @@ function Header() {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1" className='text-navbar-1'><i data-feather="home"></i> Inicio</Nav.Link>
-              <Nav.Link href="#action2" className='text-navbar-1'><i data-feather="shopping-bag"></i>Tienda</Nav.Link>
+              <Nav.Link href="#regalo" className='text-navbar-1'><i data-feather="gift"></i> Regalos</Nav.Link>
+              <Nav.Link href="#tienda" className='text-navbar-1'><i data-feather="shopping-bag"></i>Tienda</Nav.Link>
               <NavDropdown title={<span className='text-navbar-1'><i data-feather="menu"></i> Maquillaje</span>} id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3" className='text-navbar-1'><i data-feather="shopping-bag"></i>Ojos</NavDropdown.Item>
-                <NavDropdown.Item href="#action4" className='text-navbar-1'>
+                <NavDropdown.Item href="#Ojos" className='text-navbar-1'>
+                  Ojos
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#Labios" className='text-navbar-1'>
                   Labios
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action5" className='text-navbar-1'>
+                <NavDropdown.Item href="#Rostro" className='text-navbar-1'>
                   Rostro
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action6" className='text-navbar-1'>
+                <NavDropdown.Item href="#Cejas" className='text-navbar-1'>
                   Cejas
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action7" className='text-navbar-1'>
+                <NavDropdown.Item href="#Otros" className='text-navbar-1'>
                   Otros
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#" className='text-navbar-1'>
-                Consejos y tutoriales
-              </Nav.Link>
+
+              {/*Menu para skincare */}
+              <NavDropdown title={<span className='text-navbar-1'><i data-feather="menu"></i>Skincare</span>} id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#Productos/Hidrantantes" className='text-navbar-1'>
+                  Hidrantantes
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#Productos/Tratamiento" className='text-navbar-1'>
+                  Tratamientos
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#Productos/Proteccion" className='text-navbar-1'>
+                  Protección
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#Productos/Limpieza" className='text-navbar-1'>
+                  Limpieza
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#Productos/Antiedad" className='text-navbar-1'>
+                  Antiedad
+                </NavDropdown.Item>
+              </NavDropdown>
+
+              <Nav.Link href="#Ayuda" className='text-navbar-1'><i data-feather="info"></i>Ayuda</Nav.Link>
             </Nav>
 
             <Form className="d-flex ">
@@ -63,7 +85,8 @@ function Header() {
                 className="me-1 barra-busqueda" 
                 aria-label="¿Que deseas buscar?"
               />
-              <Button variant="outline-info" className='search-button'><i data-feather="search"></i>Buscar</Button>
+              {/*BOTON BUSCAR */}
+              <Button className='search-button'><i data-feather="search"></i>Buscar</Button>
             </Form>
 
             {/*carrito de compras*/}
@@ -105,10 +128,10 @@ function Header() {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </Container >
       </Navbar>
 
-    </Container>
+    </Container >
   );
 }
 

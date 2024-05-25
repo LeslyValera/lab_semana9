@@ -1,6 +1,9 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import Makeup from './data/makeup.json'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { Row } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
 
 
@@ -36,16 +39,46 @@ const Main = () => {
               })
           }
       </Carousel>
+
+  <Row className="py-4">
+      <Card className="card-style" style={{ width: '17rem' }}>
+      <Card.Img variant="info" src="https://i.pinimg.com/564x/e3/ce/e0/e3cee0d291de37bb773eba0958c9a165.jpg" />
+      <Card.Body>
+        <Card.Title>Iluminadores/ highlighter - Essence</Card.Title>
+        <Card.Text>
+          S/ 20.90 - 16g.
+        </Card.Text>
+        <Button className='button-list'>Añadir al carrito</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className="card-style" style={{ width: '17rem' }}>
+      <Card.Img variant="info" src="https://i.pinimg.com/564x/96/cf/76/96cf76e779e331e2da59e32bbfae8844.jpg" />
+      <Card.Body>
+        <Card.Title>Polvo Compacto Fijador - Essence</Card.Title>
+        <Card.Text>
+          S/ 35.90 - 22g.
+        </Card.Text>
+        <Button className='button-list'>Añadir al carrito</Button>
+      </Card.Body>
+    </Card>
+
+    <Card className="card-style" style={{ width: '17rem' }}>
+      <Card.Img variant="info" src="https://i.pinimg.com/564x/47/b2/9f/47b29fa15444bed648f63562c61606f2.jpg" />
+      <Card.Body>
+        <Card.Title>Base De Mousse Mate Natural - Essence</Card.Title>
+        <Card.Text>
+          S/ 39.90 - 25g.
+        </Card.Text>
+        <Button className='button-list'>Añadir al carrito</Button>
+      </Card.Body>
+    </Card>
+
+  </Row>
+
+      
   </main >;
 }
-
-    {/*<div className="mt-4">
-      <h2>Descubre nuestras últimas tendencias y productos para realzar tu belleza natural.</h2>
-        
-      <p>En nuestro sitio, te sumergirás en el maravilloso mundo del maquillaje, donde la creatividad se une con la belleza para realzar tus rasgos naturales y expresar tu personalidad única.</p>
-      <p>Descubre nuestra amplia gama de productos de maquillaje de alta calidad, diseñados para satisfacer las necesidades de cualquier ocasión. Tenemos todo lo que necesitas para lograr el look perfecto.</p>
-</div>*/}
-
 
 
 export default Main;

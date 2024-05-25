@@ -10,6 +10,8 @@ function Aside() {
 
   return (
     <Form className= "mb-5 py-5 my-custom-form">
+     <h2 style={{ textAlign: 'center', color: '#333', fontFamily: 'Roboto' }}>Registrate</h2>
+     <br></br>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label><i data-feather="mail"></i>Correo Electrónico</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
@@ -25,7 +27,7 @@ function Aside() {
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Acepto uso de mis datos personales" />
       </Form.Group>
-      <Button className='button-form' variant="info" type="Submit">
+      <Button className='button-form' type="Submit">
       {/*<i data-feather="send"></i>*/} Registrarme
       </Button>
     </Form>
